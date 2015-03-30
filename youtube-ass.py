@@ -1,3 +1,5 @@
+__author__ = 'Ireneusz'
+
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -214,7 +216,7 @@ if __name__ == "__main__":
         print("Usage: {0} <youtube video id>".format(sys.argv[0]))
         exit(0)
     video_id = sys.argv[1]
-    url = "http://youtube.com/annotations/read2?feat=TCS&video_id=" + video_id
+    url = "https://www.youtube.com/annotations_invideo?features=1&legacy=1&video_id=" + video_id
     xml_data = urlopen(url).read()
     if DEBUG:
         with open(video_id+'-annotations.xml', 'w') as f:

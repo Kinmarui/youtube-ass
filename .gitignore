@@ -1,6 +1,7 @@
 *~
 *.py[oc]
 *.swp
+.idea/
 
 # Ignore subtitle files
 *.ass
